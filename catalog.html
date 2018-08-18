@@ -1,73 +1,85 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Девайс - Каталог</title>
 </head>
 <body>
   <header class="header">
-    <a href="index.html" class="main-header-logo">DEVICE</a>
+    <a class="header-logo" href="index.html"><img src="#" alt="DEVICE"></a>
     <nav class="header-navigation">
-      <form action="" method="post" class="search-form">
+      <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
         <input type="text" name="search" id="search-field" placeholder="Поиск по сайту">
       </form>
       <ul class="user-navigation">
-        <li class="header-login-link"><button type="button" name="header-login-button" class="login-button header-button"><img src="#" alt="">Войти</button></li>
+        <li class="header-login-link">
+          <a href="#"><img src="#" alt="">Войти</a>
+        </li>
       </ul>
-      <button type="button" name="header-compare-button" class="compare-button header-button">Сравнить</button>
-      <button type="button" name="header-basket-button" class="basket-button header-button">Корзина</button>
-      <span>Каталог товаров</span>
+      <button class="compare-button header-button" type="button" name="header-compare-button">Сравнить</button>
+      <button class="basket-button header-button" type="button" name="header-basket-button">Корзина</button>
       <ul class="services-navigation-header">
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Гарантия</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
+      <ul class="goods-menu">
+        <li>
+          Каталог товаров
+          <li>
+            <ul>
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="#">Моноподы для селфи</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">Умные часы</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </li>
+        </li>   <!--Валидатор по неизвестной причине утверждает, что этот закрывающий тег лишний, что есть неправда.-->
+      </ul>
     </nav>
-    <section class="goods-menu">
-      <ul class="goods-menu-cols">
-        <li><a href="#">Виртуальная реальность</a></li>
-        <li><a href="#">Моноподы для селфи</a></li>
-        <li><a href="#">Экшн-камеры</a></li>
-      </ul>
-      <ul class="goods-menu-cols">
-        <li><a href="#">Фитнес-браслеты</a></li>
-        <li><a href="#">Умные часы</a></li>
-      </ul>
-      <ul class="goods-menu-cols">
-        <li><a href="#">Квадрокоптеры</a></li>
-      </ul>
-    </section>
   </header>
 
   <main class="catalog-content">
     <nav class="site-navigation">  
-      <h1>Моноподы для селфи</h1>                 
+      <h1>Моноподы для селфи</h1>
       <p>Главная > Каталог товаров > Моноподы для селфи</p>
     </nav>
     <section class="filter">
-      <h2>Фильтр</h2>                                        
-      <form action="" method="post" class="filter-cost-form">  
-        <h3>Стоимость</h3>                                                 <!--Или тут заголовок перебор?-->
-        <input type="range" name="filter-cost-range" id="fiter-cost-range"><!--Надписи "от 0" и "до 5000" пока не добавлены вследствие недостачного понимания-->
-        <h3>Цвет</h3>                                                      <!--механизма их появления.--> 
-        <label for="filter-check-black">                                                                  
-          <input type="checkbox" name="filter-check-black" id="filter-check-black" class="filter-check-color">
+      <h2>Фильтр</h2>
+      <form class="filter-cost-form" action="https://echo.htmlacademy.ru/" method="post" oninput="filter-changed-cost.value=filter-cost-range.value">
+        <h3>Стоимость</h3>
+        <span>0</span>
+        <input type="range" name="filter-cost-range" id="filter-cost-range" min="1" max="10000" step="1">
+        <output name="filter-changed-cost" id="filter-changed-cost">5000</output>   <!--Отказывается работать. Причина неясна, делаю 1 в 1 как в курсах.-->
+        <h3>Цвет</h3>
+        <label for="filter-check-black">
+          <input class="filter-check-color" type="checkbox" name="filter-check-black" id="filter-check-black">
           Черный
         </label> 
         <label for="filter-check-white">                                                                  
-          <input type="checkbox" name="filter-check-white" id="filter-check-white" class="filter-check-color">
+          <input class="filter-check-color" type="checkbox" name="filter-check-white" id="filter-check-white">
           Белый
         </label>
         <label for="filter-check-blue">                                                                  
-          <input type="checkbox" name="filter-check-blue" id="filter-check-blue" class="filter-check-color">
+          <input class="filter-check-color" type="checkbox" name="filter-check-blue" id="filter-check-blue">
           Синий
         </label> 
         <label for="filter-check-red">                                                                  
-          <input type="checkbox" name="filter-check-red" id="filter-check-red" class="filter-check-color">
+          <input class="filter-check-color" type="checkbox" name="filter-check-red" id="filter-check-red">
           Красный
         </label> 
         <label for="filter-check-pink">                                                                  
-          <input type="checkbox" name="filter-check-pink" id="filter-check-pink" class="filter-check-color">
+          <input class="filter-check-color" type="checkbox" name="filter-check-pink" id="filter-check-pink">
           Розовый
         </label>
         <h3>Bluetooth</h3>  
@@ -84,88 +96,99 @@
     </section>
     <section class="sort">
       <h2>Сортировка:</h2>
-      <form action="" method="post" name="filter-sort-form">
-        <button type="submit" name="sort-bycost-button" id="sort-bycost-button" class="filter-sort-button">По цене</button>
-        <button type="submit" name="sort-bytype-button" id="sort-bytype-button" class="filter-sort-button">По типу</button>
-        <button type="submit" name="sort-bypopularity-button" id="sort-bypopularity-button" class="filter-sort-button">По популярности</button>
-        <button type="submit" name="sort-ascdesc-button" id="sort-ascdesc-button" class="filter-sort-ascdesc-button">
-          <img src="#" alt="По возрастанию/по убыванию" class="filter-sort-ascdesc-image">
+      <form action="https://echo.htmlacademy.ru/" method="post" name="filter-sort-form">
+        <button class="filter-sort-button" type="submit" name="sort-bycost-button" id="sort-bycost-button">По цене</button>
+        <button class="filter-sort-button" type="submit" name="sort-bytype-button" id="sort-bytype-button">По типу</button>
+        <button class="filter-sort-button" type="submit" name="sort-bypopularity-button" id="sort-bypopularity-button">По популярности</button>
+        <button class="filter-sort-ascdesc-button" type="submit" name="sort-ascdesc-button" id="sort-ascdesc-button">
+          <img class="filter-sort-ascdesc-image" src="#" alt="По возрастанию/по убыванию">
         </button>
       </form>
     </section>
     <section class="catalog-content">
-      <div class="content-container">
+      <h2 class="visually-hidden">Список товаров</h2>
+      <div class="product-card">
         <div class="content-image-container">
-          <img src="#" alt="Любительская селфи-палка" class="content-image">   <!--Или тут через figure надо? Дабы метку "new" добавлять? Или и так добавить можно?-->
+          <img class="content-image" src="#" alt="Любительская селфи-палка">   <!--Или тут через figure надо? Дабы метку "new" добавлять? Или и так добавить можно?-->
         </div>
         <div class="content-description">
           <table>
-            <tr>
-              <th>Любительская селфи-палка</th>
-              <td>500 руб.</td>
-            </tr>
+            <tbody>
+              <tr>
+                <th>Любительская селфи-палка</th>
+                <td>500 руб.</td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
-      <div class="content-container">
+      <div class="product-card">
         <div class="content-image-container">
-          <img src="#" alt="Профессиональная селфи-палка" class="content-image">
+          <img class="content-image" src="#" alt="Профессиональная селфи-палка">
         </div>
         <div class="content-description">
           <table>
-            <tr>
-              <th>Профессиональная селфи-палка</th>
-              <td>1500 руб.</td>
-            </tr>
+            <tbody>
+              <tr>
+                <th>Профессиональная селфи-палка</th>
+                <td>1500 руб.</td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
-      <div class="content-container">
+      <div class="product-card">
         <div class="content-image-container">
-          <img src="#" alt="Непотопляемая селфи-палка" class="content-image">
+          <img class="content-image" src="#" alt="Непотопляемая селфи-палка">
         </div>
         <div class="content-description">
           <table>
-            <tr>
-              <th>Непотопляемая селфи-палка</th>
-              <td>2500 руб.</td>
-            </tr>
+            <tbody>
+              <tr>
+                <th>Непотопляемая селфи-палка</th>
+                <td>2500 руб.</td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
-      <div class="content-container">
+      <div class="product-card">
         <div class="content-image-container">
-          <img src="#" alt="Селфи-палка Следуй за мной" class="content-image"> <!--Сделайте мне развидеть это...-->
+          <img class="content-image" src="#" alt="Селфи-палка Следуй за мной">
         </div>
         <div class="content-description">
           <table>
-            <tr>
-              <th>Селфи-палка "Следуй за мной"</th>
-              <td>4900 руб.</td>
-            </tr>
+            <tbody>
+              <tr>
+                <th>Селфи-палка "Следуй за мной"</th>
+                <td>4900 руб.</td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
     </section>
-    <section class="catalog-navigation">
-      <button type="button" name="catalog-navigation-button-back" id="catalog-navigation-button-back">Назад</button>
-      <ul class="catalog-navigation-list">
-        <li><button type="button" name="catalog-navigation-button-1" id="catalog-navigation-button-1">1</button></li>
-        <li><button type="button" name="catalog-navigation-button-2" id="catalog-navigation-button-2">2</button></li>
-        <li><button type="button" name="catalog-navigation-button-3" id="catalog-navigation-button-3">3</button></li>
+    <div class="pagination">
+      <button type="button" name="pagination-button-back" id="pagination-button-back">Назад</button>
+      <ul class="pagination-list">
+        <li><button type="button" name="pagination-button-1" id="pagination-button-1">1</button></li>
+        <li><button type="button" name="pagination-button-2" id="pagination-button-2">2</button></li>
+        <li><button type="button" name="pagination-button-3" id="pagination-button-3">3</button></li>
       </ul>
-      <button type="button" name="catalog-navigation-button-next" id="catalog-navigation-button-next">Вперед</button>
-    </section>
+      <button type="button" name="pagination-button-next" id="pagination-button-next">Вперед</button>
+    </div>
   </main>
     
   <footer class="footer">
-    <a href="index.html" class="main-header-logo">DEVICE</a>
+    <a class="footer-logo" href="index.html"><img src="#" alt="DEVICE"></a>
     <nav class="footer-navigation">
       <ul class="user-navigation">
-        <li class="footer-login-link"><button type="button" name="footer-login-button" class="login-button footer-button"><img src="#" alt="">Войти</button></li>
+        <li class="footer-login-link">
+          <a href="#"><img src="#" alt="">Войти</a>
+        </li>
       </ul>
-      <button type="button" name="footer-compare-button" class="compare-button footer-button">Сравнить</button>
-      <button type="button" name="footer-basket-button" class="basket-button footer-button">Корзина</button>
+      <button class="compare-button footer-button" type="button" name="footer-compare-button">Сравнить</button>
+      <button class="basket-button footer-button" type="button" name="footer-basket-button">Корзина</button>
       <ul class="services-navigation-footer">
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Гарантия</a></li>
@@ -179,13 +202,13 @@
       </div>
       <div class="footer-social">
         <ul>
-          <li><a href="#" class="social-button">Vkontakte</a></li>
-          <li><a href="#" class="social-button">Instagram</a></li>
-          <li><a href="#" class="social-button">Facebook</a></li>
+          <li><a class="social-button" href="#">Vkontakte</a></li>
+          <li><a class="social-button" href="#">Instagram</a></li>
+          <li><a class="social-button" href="#">Facebook</a></li>
         </ul>
       </div>
-      <a href="https://htmlacademy.ru/intensive/htmlcss" class="academy-logo">
-        <img src="#" alt="Логотип HTML Academy" class="academy-logo-img">
+      <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+        <img class="academy-logo-img" src="#" alt="Логотип HTML Academy">
       </a>
     </nav>
   </footer>
