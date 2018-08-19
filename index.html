@@ -13,11 +13,15 @@
       </form>
       <ul class="user-navigation">
         <li class="header-login-link">
-          <a href="#"><img src="#" alt="">Войти</a>
+          <a href="#"><img src="img/user.svg" alt=""> Войти</a> <!--Или иконки пользовательской навигации не настолько важны, и их лучше добавить через CSS?-->
         </li>
       </ul>
-      <button class="compare-button" type="button" name="header-compare-button">Сравнить</button>
-      <button class="basket-button" type="button" name="header-basket-button">Корзина</button>
+      <button class="compare-button header-button" type="button" name="header-compare-button">
+        <img src="img/compare.svg" alt=""> Сравнить                                             <!--Или картинки лучше вне кнопки?-->
+      </button>
+      <button class="basket-button header-button" type="button" name="header-basket-button">
+        <img src="img/cart.svg" alt=""> Корзина
+      </button>
       <ul class="services-navigation-header">
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Гарантия</a></li>
@@ -125,16 +129,25 @@
     </section>
     <div class="slider-move-container">
       <ul class="slider-move-buttons">
-        <li><button type="button" name="slider-move-button-1" id="slider-move-button-1"><img src="#" alt=""></button></li>
-        <li><button type="button" name="slider-move-button-2" id="slider-move-button-2"><img src="#" alt=""></button></li>
-        <li><button type="button" name="slider-move-button-3" id="slider-move-button-3"><img src="#" alt=""></button></li>
+        <li><button type="button" name="slider-move-button-1" id="slider-move-button-1">
+          <img src="img/slider-button.svg" alt="">
+        </button>
+      </li>
+        <li><button type="button" name="slider-move-button-2" id="slider-move-button-2">
+          <img src="img/slider-button-empty.svg" alt="">
+        </button>
+      </li>
+        <li><button type="button" name="slider-move-button-3" id="slider-move-button-3">
+          <img src="img/slider-button-empty.svg" alt="">
+        </button>
+      </li>
       </ul>  
     </div>
     <section class="popular">
       <h2 class="visually-hidden">Популярные товары</h2>
       <div class="popular-item-container">
         <div>
-          <a href="#"><img src="#" alt="Виртуальная реальность"></a>
+          <a href="#"><img src="img/popular-1.svg" alt="Виртуальная реальность"></a>
         </div>
         <div>
           <a href="#">Виртуальная реальность</a>
@@ -142,7 +155,7 @@
       </div>
       <div class="popular-item-container"> 
         <div>
-          <a href="#"><img src="#" alt="Моноподы для селфи"></a>
+          <a href="#"><img src="img/popular-2.svg" alt="Моноподы для селфи"></a>
         </div>
         <div>
           <a href="#">Моноподы для селфи</a>
@@ -150,7 +163,7 @@
       </div>
       <div class="popular-item-container">
         <div>
-          <a href="#"><img src="#" alt="Экшн-камеры"></a>
+          <a href="#"><img src="img/popular-3.svg" alt="Экшн-камеры"></a>
         </div>
         <div>
           <a href="#">Экшн-камеры</a>
@@ -158,7 +171,7 @@
       </div>
       <div class="popular-item-container">
         <div>
-          <a href="#"><img src="#" alt="Фитнес-браслеты"></a>
+          <a href="#"><img src="img/popular-4.svg" alt="Фитнес-браслеты"></a>
         </div>
         <div>
           <a href="#">Фитнес-браслеты</a>
@@ -166,7 +179,7 @@
       </div> 
       <div class="popular-item-container">
         <div>
-          <a href="#"><img src="#" alt="Умные часы"></a>
+          <a href="#"><img src="img/popular-5.svg" alt="Умные часы"></a>
         </div>
         <div>
           <a href="#">Умные часы</a>
@@ -174,7 +187,7 @@
       </div>
       <div class="popular-item-container">
         <div>
-          <a href="#"><img src="#" alt="Квадрокоптеры"></a>
+          <a href="#"><img src="img/popular-6.svg" alt="Квадрокоптеры"></a>
         </div>
         <div>
           <a href="#">Квадрокоптеры</a>
@@ -259,11 +272,15 @@
     <nav class="footer-navigation">
       <ul class="user-navigation">
         <li class="footer-login-link">
-          <a href="#"><img src="#" alt="">Войти</a>
+          <a href="#"><img src="img/user.svg" alt=""> Войти</a>
         </li>
       </ul>
-      <button class="compare-button" type="button" name="footer-compare-button">Сравнить</button>
-      <button class="basket-button" type="button" name="footer-basket-button">Корзина</button>
+      <button class="compare-button footer-button" type="button" name="footer-compare-button">
+        <img src="img/compare.svg" alt=""> Сравнить
+      </button>
+      <button class="basket-button footer-button" type="button" name="footer-basket-button">
+        <img src="img/cart.svg" alt=""> Корзина
+      </button>
       <ul class="services-navigation-footer">
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Гарантия</a></li>
@@ -277,13 +294,13 @@
       </div>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#">Vkontakte</a></li>
-          <li><a class="social-button" href="#">Instagram</a></li>
-          <li><a class="social-button" href="#">Facebook</a></li>
+          <li><a class="social-button" href="#"><img src="img/fb.svg" alt=""></a></li>
+          <li><a class="social-button" href="#"><img src="img/instagram.svg" alt=""></a></li>
+          <li><a class="social-button" href="#"><img src="img/twitter.svg" alt=""></a></li>
         </ul>
       </div>
       <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img class="academy-logo-img" src="#" alt="Логотип HTML Academy">
+        <img class="academy-logo-img" src="img/logo-html.svg" alt="Логотип HTML Academy">
       </a>
     </nav>
   </footer>

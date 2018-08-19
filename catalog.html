@@ -13,11 +13,18 @@
       </form>
       <ul class="user-navigation">
         <li class="header-login-link">
-          <a href="#"><img src="#" alt="">Войти</a>
+          <a href="#">
+            <span>Валентин Петухов</span>
+            <img src="img/user.svg" alt=""> Выйти
+          </a>
         </li>
       </ul>
-      <button class="compare-button header-button" type="button" name="header-compare-button">Сравнить</button>
-      <button class="basket-button header-button" type="button" name="header-basket-button">Корзина</button>
+      <button class="compare-button header-button" type="button" name="header-compare-button">
+        <img src="img/compare.svg" alt=""> Сравнить
+      </button>
+      <button class="basket-button header-button" type="button" name="header-basket-button">
+        <img src="img/cart.svg" alt=""> Корзина
+      </button>
       <ul class="services-navigation-header">
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Гарантия</a></li>
@@ -100,8 +107,11 @@
         <button class="filter-sort-button" type="submit" name="sort-bycost-button" id="sort-bycost-button">По цене</button>
         <button class="filter-sort-button" type="submit" name="sort-bytype-button" id="sort-bytype-button">По типу</button>
         <button class="filter-sort-button" type="submit" name="sort-bypopularity-button" id="sort-bypopularity-button">По популярности</button>
-        <button class="filter-sort-ascdesc-button" type="submit" name="sort-ascdesc-button" id="sort-ascdesc-button">
-          <img class="filter-sort-ascdesc-image" src="#" alt="По возрастанию/по убыванию">
+        <button class="filter-sort-ascdesc-button" type="submit" name="sort-ascdesc-button" id="sort-asc-button">
+          <img src="img/icon-up-dir.svg" alt="По возрастанию">   <!--Смущают названия иконок. Эта кнопки предназначены для сортировки-->
+        </button>                                                <!--по возрастанию/убыванию, или для листания вверх-вниз?-->
+        <button class="filter-sort-ascdesc-button" type="submit" name="sort-ascdesc-button" id="sort-desc-button">
+          <img src="img/icon-down-dir.svg" alt="По убыванию">
         </button>
       </form>
     </section>
@@ -109,7 +119,7 @@
       <h2 class="visually-hidden">Список товаров</h2>
       <div class="product-card">
         <div class="content-image-container">
-          <img class="content-image" src="#" alt="Любительская селфи-палка">   <!--Или тут через figure надо? Дабы метку "new" добавлять? Или и так добавить можно?-->
+          <img class="content-image" src="#" alt="Любительская селфи-палка">
         </div>
         <div class="content-description">
           <table>
@@ -184,11 +194,19 @@
     <nav class="footer-navigation">
       <ul class="user-navigation">
         <li class="footer-login-link">
-          <a href="#"><img src="#" alt="">Войти</a>
+          <a href="#">
+            <img src="img/user.svg" alt="">
+            <span>Валентин Петухов</span>
+            Выйти
+          </a>
         </li>
       </ul>
-      <button class="compare-button footer-button" type="button" name="footer-compare-button">Сравнить</button>
-      <button class="basket-button footer-button" type="button" name="footer-basket-button">Корзина</button>
+      <button class="compare-button footer-button" type="button" name="footer-compare-button">
+        <img src="img/compare.svg" alt=""> Сравнить
+      </button>
+      <button class="basket-button footer-button" type="button" name="footer-basket-button">
+        <img src="img/cart.svg" alt=""> Корзина
+      </button>
       <ul class="services-navigation-footer">
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Гарантия</a></li>
@@ -202,13 +220,13 @@
       </div>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#">Vkontakte</a></li>
-          <li><a class="social-button" href="#">Instagram</a></li>
-          <li><a class="social-button" href="#">Facebook</a></li>
+          <li><a class="social-button" href="#"><img src="img/fb.svg" alt=""></a></li>
+          <li><a class="social-button" href="#"><img src="img/instagram.svg" alt=""></a></li>
+          <li><a class="social-button" href="#"><img src="img/twitter.svg" alt=""></a></li>
         </ul>
       </div>
       <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img class="academy-logo-img" src="#" alt="Логотип HTML Academy">
+        <img class="academy-logo-img" src="img/logo-html.svg" alt="Логотип HTML Academy">
       </a>
     </nav>
   </footer>
