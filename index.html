@@ -5,9 +5,9 @@
   <title>HTML Academy: Девайс - Главная страница</title>
 </head>
 <body>
-  <header class="header">
-    <a class="header-logo"><img src="#" alt="DEVICE"></a>
+  <header class="header">  
     <nav class="header-navigation">
+      <a class="header-logo"><img src="#" alt="DEVICE"></a>
       <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
         <input type="search" name="search" id="search-field" placeholder="Поиск по сайту">
       </form>
@@ -23,12 +23,7 @@
         <img src="img/cart.svg" alt=""> Корзина
       </button>
       <ul class="services-navigation-header">
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-      <ul class="goods-menu">
-        <li>
+        <li class="goods-menu">
           Каталог товаров
           <li>
             <ul>
@@ -48,7 +43,10 @@
               <li><a href="#">Квадрокоптеры</a></li>
             </ul>
           </li>
-        </li>   <!--Валидатор по неизвестной причине утверждает, что этот закрывающий тег лишний, что есть неправда.-->
+        </li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Гарантия</a></li>
+        <li><a href="#">Контакты</a></li>
       </ul>
     </nav>
   </header>
@@ -147,7 +145,7 @@
       <h2 class="visually-hidden">Популярные товары</h2>
       <div class="popular-item-container">
         <div>
-          <a href="#"><img src="img/popular-1.svg" alt="Виртуальная реальность"></a>
+          <a href="#" class="polular-image"></a>
         </div>
         <div>
           <a href="#">Виртуальная реальность</a>
@@ -155,7 +153,7 @@
       </div>
       <div class="popular-item-container"> 
         <div>
-          <a href="#"><img src="img/popular-2.svg" alt="Моноподы для селфи"></a>
+          <a href="#" class="polular-image"></a>
         </div>
         <div>
           <a href="#">Моноподы для селфи</a>
@@ -163,7 +161,7 @@
       </div>
       <div class="popular-item-container">
         <div>
-          <a href="#"><img src="img/popular-3.svg" alt="Экшн-камеры"></a>
+          <a href="#" class="polular-image"></a>
         </div>
         <div>
           <a href="#">Экшн-камеры</a>
@@ -171,7 +169,7 @@
       </div>
       <div class="popular-item-container">
         <div>
-          <a href="#"><img src="img/popular-4.svg" alt="Фитнес-браслеты"></a>
+          <a href="#" class="polular-image"></a>
         </div>
         <div>
           <a href="#">Фитнес-браслеты</a>
@@ -179,7 +177,7 @@
       </div> 
       <div class="popular-item-container">
         <div>
-          <a href="#"><img src="img/popular-5.svg" alt="Умные часы"></a>
+          <a href="#" class="polular-image"></a>
         </div>
         <div>
           <a href="#">Умные часы</a>
@@ -187,7 +185,7 @@
       </div>
       <div class="popular-item-container">
         <div>
-          <a href="#"><img src="img/popular-6.svg" alt="Квадрокоптеры"></a>
+          <a href="#" class="polular-image"></a>
         </div>
         <div>
           <a href="#">Квадрокоптеры</a>
@@ -203,23 +201,23 @@
           <li><button type="button" name="services-slider-button-credit">Кредит</button></li>
        </ul>
       </div>
-      <div class="services-delivery">
+      <div class="services">
         <h2>Доставка</h2>
-        <p class="services-text">
+        <p>
           Мы с удовольствием доставим ваш товар прямо к подъезду совершенно бесплатно!
           Ведь мы неплохо заработаем, поднимая его на ваш этаж.
         </p>
       </div>
-      <div class="services-warranty">
+      <div class="services">
         <h2>Гарантия</h2>
-        <p class="services-text">
+        <p>
           Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте,
           мы выдадим вам новый. Товар, не дом, конечно же.
         </p>
       </div>
-      <div class="services-credit">
+      <div class="services">
         <h2>Кредит</h2>
-        <p class="services-text">
+        <p>
           Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
           Выгодные для нашего банка, разумеется.
         </p>
@@ -253,23 +251,11 @@
       </div>
       <a href="#" class="moreinfo-button">Напишите нам</a>
     </section>
-    <section class="write-us">
-      <h2 class="visually-hidden">Напишите нам</h2>
-      <form class="write-us-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="write-us-hint" for="your-name">Ваше имя:</label>
-        <input type="text" name="your-name" id="your-name" placeholder="Имя Фамилия">
-        <label class="write-us-hint" for="your-email">Ваш e-mail:</label>
-        <input type="email" name="your-email" id="your-email" placeholder="email@example.com">
-        <label class="write-us-hint" for="letter-text">Текст письма:</label>
-        <textarea name="letter-text" id="letter-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-        <button type="submit" name="submit-letter" id="submit-letter-button">Отправить</button>
-      </form>
-    </section>
   </main>
 
   <footer class="footer">
-    <a class="footer-logo"><img src="#" alt="DEVICE"></a>
     <nav class="footer-navigation">
+      <a class="footer-logo"><img src="#" alt="DEVICE"></a>
       <ul class="user-navigation">
         <li class="footer-login-link">
           <a href="#"><img src="img/user.svg" alt=""> Войти</a>
@@ -304,5 +290,17 @@
       </a>
     </nav>
   </footer>
+  <section class="write-us">
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <form class="write-us-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="write-us-hint" for="your-name">Ваше имя:</label>
+        <input type="text" name="your-name" id="your-name" placeholder="Имя Фамилия">
+        <label class="write-us-hint" for="your-email">Ваш e-mail:</label>
+        <input type="email" name="your-email" id="your-email" placeholder="email@example.com">
+        <label class="write-us-hint" for="letter-text">Текст письма:</label>
+        <textarea name="letter-text" id="letter-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        <button type="submit" name="submit-letter" id="submit-letter-button">Отправить</button>
+      </form>
+    </section>
 </body>
 </html>
