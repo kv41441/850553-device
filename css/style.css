@@ -84,7 +84,7 @@ img {
 .header-logo {
   position: relative;
 
-  top: -19px;
+  top: -17px;
   left: 60px;
 }
 
@@ -116,7 +116,7 @@ img {
   flex-grow: 1;
 }
 
-.header-login-link img {
+.header-login-link svg {
   margin-right: 10px;
 }
 
@@ -300,6 +300,8 @@ img {
   position: absolute;
   
   background-color: #f7e296;
+
+  z-index: -1;
 }
 
 .main-content ul {
@@ -470,6 +472,19 @@ img {
   margin-top: 51px;
 }
 
+.popular-item-list {
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  margin: 0;
+  padding: 0;
+
+  min-width: 1160px;
+}
+
 .popular-item-image {
   position: relative;
 }
@@ -479,7 +494,7 @@ img {
   flex-direction: column;
   flex-wrap: wrap;
 
-  padding-top: 148px;
+  margin-top: 173px;
   margin-bottom: 50px;
   margin-right: 40px;
 
@@ -494,7 +509,7 @@ img {
   content: "";
 
   position: absolute;
-  top: -150px;
+  top: -193px;
 
   width: 160px;
   height: 160px;
@@ -506,7 +521,7 @@ img {
   content: "";
 
   position: absolute;
-  top: -150px;
+  top: -193px;
 
   width: 160px;
   height: 160px;
@@ -518,7 +533,7 @@ img {
   content: "";
 
   position: absolute;
-  top: -150px;
+  top: -193px;
 
   width: 160px;
   height: 160px;
@@ -530,7 +545,7 @@ img {
   content: "";
 
   position: absolute;
-  top: -150px;
+  top: -193px;
 
   width: 160px;
   height: 160px;
@@ -542,7 +557,7 @@ img {
   content: "";
 
   position: absolute;
-  top: -150px;
+  top: -193px;
 
   width: 160px;
   height: 160px;
@@ -554,7 +569,7 @@ img {
   content: "";
 
   position: absolute;
-  top: -150px;
+  top: -193px;
 
   width: 160px;
   height: 160px;
@@ -611,18 +626,19 @@ img {
   background: url("../img/delivery.svg") no-repeat 0 0;
 }
 
-body::before {   /*Серый фон на всю ширину страницы*/
+.services-slider-buttons::before {
   content: "";
 
   position: absolute;
-  top: 1242px;
+  top: 66px;
+  left: -140px;
 
   width: 1440px;
   height: 287px;
 
   background-color: #e5e5e5;
 
-  z-index: -1;   /*Firefox 2.0 shall not pass!*/
+  z-index: -1;
 }
 
 .services-slider-buttons ul {
@@ -826,7 +842,6 @@ body::before {   /*Серый фон на всю ширину страницы*/
 }
 
 /*Footer*/
-/*Это безумие? Нет! Это Футер!!1 (5:00 ТМСК)*/
 
 .footer {
   width: 1440px;
@@ -1008,3 +1023,397 @@ body::before {   /*Серый фон на всю ширину страницы*/
 }
 
 /*!!!!!!!!!!!!!!!! CONTENT PAGE !!!!!!!!!!!!!!!!!!!!*/
+
+/*Header*/
+
+.catalog-header {
+  margin-left: 130px;
+}
+
+.catalog-header span {
+  letter-spacing: 0.5px;
+}
+
+.catalog-header span:last-of-type {
+  padding-left: 8px;
+}
+
+/*Main. Site navigation*/
+
+.site-navigation h1 {
+  font-family: "GilroyExtraBold", sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+  letter-spacing: 0.5px;
+
+  padding-left: 60px;
+}
+
+.site-navigation {
+  margin-left: 140px;
+}
+
+.site-navigation p {
+  padding-left: 45px;
+
+  margin-top: -11px;
+}
+
+.site-navigation span {
+  font-family: "OpenSansLight", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  opacity: 0.3;
+
+  padding-right: 11px;
+  padding-left: 15px;
+}
+
+.catalog-main-content {
+  margin-top: 85px;
+  padding-bottom: 29px;
+
+  position: relative;
+}
+
+.site-navigation::before {
+  content: "";
+
+  width: 1160px;
+  height: 52px;
+
+  top: -85px;
+
+  position: absolute;
+  
+  background-color: #f7e296;
+
+  z-index: -1;
+}
+
+/*Filter*/
+
+.filter {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: -10px;
+  margin-bottom: -29px;
+  padding-left: 199px;
+  padding-top: 10px;
+  padding-right: 70px;
+
+  min-width: 200px;
+
+  background-color: #eeeeee;
+}
+
+.filter::before {
+  content: "";
+
+  width: 468px;
+  height: 70px;
+
+  top: -10px;
+  left: 0px;
+
+  position: absolute;
+  
+  background-color: #dcdcdc;
+
+  z-index: 1;
+}
+
+.catalog-main-content-container {
+  display: flex;
+
+  margin-top: 55px;
+
+  position: relative;
+}
+
+.catalog-main-content-container::before {
+  content: "";
+
+  width: 200px;
+  height: 2px;
+
+  top: 129px;
+  left: 200px;
+
+  position: absolute;
+  
+  background-color: #000000;
+}
+
+.catalog-main-content-inner-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter h2,
+.sort h2 {
+  font-family: "GilroyExtraBold", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3.8px;
+  text-transform: uppercase;
+
+  z-index: 1;
+}
+
+.filter h3 {
+  font-family: "GilroyExtraBold", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.filter-cost-form label {
+  font-family: "OpenSansLight", sans-serif;
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.3px;
+}
+
+.filter-cost-form {
+  margin-top: 73px;
+}
+
+.filter-cost-form div:first-child::before {
+  content: "";
+
+  width: 200px;
+  height: 2px;
+
+  top: 269px;
+  left: 200px;
+
+  position: absolute;
+  
+  background-color: #000000;
+}
+
+.filter-cost-form div:first-of-type {
+  margin-bottom: 75px;
+}
+
+.filter-cost-form input[type="number"] {
+  width: 60px;
+}
+
+.filter .filter-color-check-container {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 0;
+  margin-left: 21px;
+
+  list-style: none;
+}
+
+.filter-cost-form div:nth-of-type(2) {
+  margin-bottom: 43px;
+}
+
+.filter-cost-form div:nth-of-type(3)::before {
+  content: "";
+
+  width: 200px;
+  height: 2px;
+
+  top: 554px;
+  left: 200px;
+
+  position: absolute;
+  
+  background-color: #000000;
+}
+
+.filter-bluetooth {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 0;
+  margin-left: 21px;
+
+  list-style: none;
+}
+
+.filter-cost-form div:last-of-type {
+  margin-bottom: 36px;
+}
+
+.filter-apply-button {
+  margin-left: 29px;
+  margin-bottom: 50px;
+}
+
+/*Sort*/
+
+.sort {
+  display: flex;
+
+  min-height: 70px;
+
+  margin-top: -10px;
+
+  padding-left: 22px; 
+  padding-right: 120px;
+
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+
+.sort h2 {
+  align-self: center;
+
+  margin-right: 50px;
+}
+
+.sort-buttons-container {
+  display: flex;
+
+  margin-left: 50px;
+}
+
+.sort-buttons-container > a {
+  font-family: "OpenSans", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+  color: #000000;
+  opacity: 0.3;
+
+  margin-right: 30px;
+
+  align-self: center;
+}
+
+.filter-sort-ascdesc-container {
+  display: flex;
+
+  margin-left: 203px;
+}
+
+.filter-sort-ascdesc-container a {
+  margin-right: 20px;
+
+  opacity: 0.3;
+
+  align-self: center;
+}
+
+.sort-buttons-container .filter-sort-button-active {
+  opacity: 1;
+}
+
+/*Content*/
+
+.catalog-content {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: 71px;
+  margin-top: 69px;
+
+  max-width: 800px;
+}
+
+.product-description tr {
+  display: flex;
+  justify-content: space-between;
+
+  width: 350px;
+}
+
+.product-description th {
+  font-family: "GilroyExtraBold", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  margin-left: -3px;
+  letter-spacing: 0.15px;
+  max-width: 260px;
+  text-align: left;
+}
+
+.product-description td {
+  font-family: "GilroyLight", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.7;
+  letter-spacing: 1px;
+  margin-right: -13px;
+}
+
+.product-description {
+  margin-top: 29px;
+}
+
+.product-image-container {
+  max-width: 360px;
+  max-height: 380px;
+}
+
+.product-card {
+  margin-right: 40px;
+  margin-bottom: 43px;
+}
+
+/*Pagination*/
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-left: 70px;
+
+
+
+  width: 760px;
+
+  padding-bottom: 15px;
+  margin-top: -10px;
+  margin-bottom: 40px;
+}
+
+.pagination-list {
+  display: flex;
+  
+  padding-top: 10px;
+  margin-right: 25px;
+  
+  list-style: none;
+}
+
+.pagination-list li {
+  margin-right: 10px;
+}
+
+.pagination-list button {
+  font-weight: bold;
+  opacity: 0.3;
+}
+
+.pagination-button {
+  font-size: 16px;
+}
+
+.pagination-button:first-of-type {
+  padding-top: 5px;
+  margin-left: 20px;
+}
+
+.pagination-button:last-of-type {
+  padding-top: 5px;
+  margin-right: 14px;
+}
+
+.pagination-list .pagination-current-page {
+  font-family: "GilroyExtaBold", sans-serif;
+  font-weight: bold;
+  opacity: 1;
+}
