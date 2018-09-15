@@ -61,6 +61,13 @@ img {
   height: auto;
 }
 
+.body-container {
+  width: 1440px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*Header*/
 
 .header ul {
