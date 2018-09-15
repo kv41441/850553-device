@@ -235,7 +235,9 @@
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы можете проверить работоспособность покупки. Всякое бывает.</p>
           <div class="map-container">
-            <img src="img/map.png" alt="г.Москва, ул.Строителей, 15" class="map-image">
+            <a href="https://www.google.ru/maps/place/%D1%83%D0%BB.+%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9,+15,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+119311/@55.6879714,37.5284807,17z/data=!4m5!3m4!1s0x46b54cf65f5c8955:0x694710ccd55501e!8m2!3d55.687031!4d37.529618">
+              <img src="img/map.png" alt="г.Москва, ул.Строителей, 15" class="map-image">
+            </a>
           </div>
           <a href="#" class="moreinfo-button contacts-button">Напишите нам</a>
         </section>
@@ -309,17 +311,29 @@
         </div>
       </nav>
     </footer>
-    <section class="write-us">
+    <section class="write-us-popup">
       <h2 class="visually-hidden">Напишите нам</h2>
-      <form class="write-us-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="write-us-hint" for="your-name">Ваше имя:</label>
-        <input type="text" name="your-name" id="your-name" placeholder="Имя Фамилия">
-        <label class="write-us-hint" for="your-email">Ваш e-mail:</label>
-        <input type="email" name="your-email" id="your-email" placeholder="email@example.com">
-        <label class="write-us-hint" for="letter-text">Текст письма:</label>
-        <textarea name="letter-text" id="letter-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-        <button type="submit" name="submit-letter" id="submit-letter-button">Отправить</button>
-      </form>
+      <div class="write-us-popup-container">
+        <button class="write-us-popup-close" type="button" name="write-us-popup-close"> Закрыть
+        </button>
+        <form class="write-us-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="write-us-input-container">
+            <div>
+              <label for="your-name">Ваше имя:</label>
+              <input type="text" name="your-name" id="your-name" placeholder="Имя Фамилия">
+            </div>
+            <div>
+              <label for="your-email">Ваш e-mail:</label>
+              <input type="email" name="your-email" id="your-email" placeholder="email@example.com">
+            </div>
+          </div>
+          <label for="letter-text">Текст письма:</label>
+          <textarea name="letter-text" id="letter-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+          <button class="moreinfo-button write-us-form-button" type="submit" name="submit-letter" id="submit-letter-button">
+            Отправить
+          </button>
+        </form>
+      </div>
     </section>
   </div>
 </body>
