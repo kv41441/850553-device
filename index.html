@@ -14,18 +14,19 @@
       </a>
       <div class="header-menu-container">
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input type="search" name="search" id="search-field" placeholder="Поиск по сайту">
+          <input class="search-input" type="search" name="search" id="search-field" placeholder="Поиск по сайту">
+          <button class="search-button" type="submit" name="search-submit">Найти</button>
         </form>
         <ul class="user-navigation">
           <li class="header-login-link header-button">
-            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg> Войти</a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg> <span>Войти</span></a>
           </li>
         </ul>
-        <a href="#" class="compare-button header-button">
-          Сравнить
+        <a class="compare-button header-button" href="#">
+          <span>Сравнить</span>
         </a>
-        <a href="#" class="basket-button header-button">
-          Корзина
+        <a class="basket-button header-button" href="#">
+          <span>Корзина</span>
         </a>
       </div>
       <ul class="services-navigation-header">
@@ -67,7 +68,7 @@
           <p class="slider-text">
             Самая длинная палка для селфи доступна в нашем магазине. Восемь(Восемь,Карл!) метров длиной и весом всего 5 килограмм.
           </p>
-          <a class="moreinfo-button" href="#">Подробнее</a>
+          <a class="moreinfo-button slider-moreinfo-button" href="#">Подробнее</a>
           <table class="slider-table-container">
             <tbody class="slider-table">
               <tr>
@@ -176,13 +177,13 @@
       <div class="services-slider-buttons">
         <ul>
           <li>
-            <button type="button" name="services-slider-button-delivery">Доставка</button>
+            <button class="services-slider-button-1" type="button" name="services-slider-button-delivery">Доставка</button>
           </li>
           <li>
-            <button type="button" name="services-slider-button-warranty">Гарантия</button>
+            <button class="services-slider-button-2" type="button" name="services-slider-button-warranty">Гарантия</button>
           </li>
           <li>
-            <button type="button" name="services-slider-button-credit">Кредит</button>
+            <button class="services-slider-button-3" type="button" name="services-slider-button-credit">Кредит</button>
           </li>
        </ul>
       </div>
@@ -211,10 +212,10 @@
     <section class="logotypes">
       <h2 class="visually-hidden">Наши партнеры</h2>
       <ul class="logotypes-list">
-        <li><img src="img/logo-1.png" alt="dji"></li>
-        <li><img src="img/logo-2.png" alt="SPGADGETS"></li>
-        <li><img src="img/logo-3.png" alt="GoPro"></li>
-        <li><img src="img/logo-4.png" alt="VIVE"></li>
+        <li><img src="img/logo-1.png" alt="dji" width="260" height="100"></li>
+        <li><img src="img/logo-2.png" alt="SPGADGETS" width="260" height="100"></li>
+        <li><img src="img/logo-3.png" alt="GoPro" width="260" height="100"></li>
+        <li><img src="img/logo-4.png" alt="VIVE" width="260" height="100"></li>
       </ul>
     </section>
     <div class="about-us-container">
@@ -244,34 +245,6 @@
     <nav class="footer-navigation"> 
       <a class="footer-logo">
         <svg xmlns="http://www.w3.org/2000/svg" width="164" height="36" viewBox="0 0 164 36">
-          <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-          <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about=""/>
-           </rdf:RDF>
-           </x:xmpmeta>
-                                                                                                            
-                                                                                                            
-                                                                                                            
-                                                                                                            
-                                                                                                            
-                                                                                                            
-                                                                                                            
-                                                                                                            
-                                                                                                            
-                                                                                                            
-                                                                                                            
-                                                                                                            
-                                                                                                            
-                                                                                                            
-                                                                                                            
-                                                                                                            
-                                                                                                            
-                                                                                                            
-                                                                                                            
-                                                                                                            
-                                   
-          <?xpacket end="w"?></metadata>
           <defs>
             <style>
               .cls-1 {
@@ -302,16 +275,14 @@
           Корзина
         </a>
       </div>
-      <ul class="services-navigation-footer">
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-      <div class="footer-contacts-container">
-        <ul class="footer-contacts">
-          <li>г. Москва,ул.Строителей, 15</li>
-          <li>Тел:+7 (495) 495-95-95</li>
+      <div class="footer-contacts-and-services-container">
+        <p>г. Москва,ул.Строителей, 15</p>
+        <ul class="services-navigation-footer">
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
+        <p>Тел:+7 (495) 495-95-95</p>
       </div>
       <div class="footer-social-container">
         <ul class="footer-social">
@@ -331,10 +302,10 @@
             </a>
           </li>
         </ul>
+        <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo-html.svg" alt="Логотип HTML Academy" width="27" height="35">
+        </a>
       </div>
-      <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-html.svg" alt="Логотип HTML Academy" width="27" height="35">
-      </a>
     </nav>
   </footer>
   <section class="write-us">
