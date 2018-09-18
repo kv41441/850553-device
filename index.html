@@ -15,8 +15,12 @@
         </a>
         <div class="header-menu-container">
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="search-input" type="search" name="search" id="search-field" placeholder="Поиск по сайту">
-            <button class="search-button" type="submit" name="search-submit">Найти</button>
+            <div class="search-form-input-container">
+              <input class="search-form-input" type="search" name="search" id="search-field" placeholder="Поиск по сайту">
+              <button class="search-form-button" type="submit" name="search-submit">
+                <span>Найти</span>
+              </button>
+            </div>
           </form>
           <ul class="user-navigation">
             <li class="header-login-link header-button">
@@ -70,27 +74,27 @@
               Самая длинная палка для селфи доступна в нашем магазине. Восемь(Восемь,Карл!) метров длиной и весом всего 5 килограмм.
             </p>
             <a class="moreinfo-button slider-moreinfo-button" href="#">Подробнее</a>
-            <table class="slider-table-container">
-              <tbody class="slider-table">
-                <tr>
-                  <th>Длина палки</th>
-                  <td>8,5 м</td>
-                </tr>
-                <tr>
-                  <th>Вес палки</th>
-                  <td>5 кг</td>
-                </tr>
-                <tr>
-                  <th>Материал</th>
-                  <td>Карбон</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="slider-table-container">
+              <div class="slider-table">
+                <div class="slider-table-item">
+                  <span class="slider-table-header">Длина палки</span>
+                  <span class="slider-table-info-text">8,5 м</span>
+                </div>
+                <div class="slider-table-item">
+                  <span class="slider-table-header">Вес палки</span>
+                  <span class="slider-table-info-text">5 кг</span>
+                </div>
+                <div class="slider-table-item">
+                  <span class="slider-table-header">Материал</span>
+                  <span class="slider-table-info-text">Карбон</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      <!-- <div class="slide">
+        <div class="slide">
           <div class="slider-image-container">
-            <img id="slider-image" src="#" alt="Фитнес-браслеты">
+            <img id="slider-image" src="img/slider-2.png" alt="Фитнес-браслеты">
           </div>
           <span class="slider-number">02</span>
           <b class="slider-header">Худеем правильно!</b>
@@ -98,18 +102,18 @@
             Мотивирующие фитнес-браслеты помогут найти силы не пропускать занятия и соблюдать диету.
           </p>
           <a class="moreinfo-button" href="#">Подробнее</a>
-          <table class="slider-table">
-            <tbody>          
-              <tr>
-                <th>Без подзарядки</th>
-                <td>48 часов</td>
-               </tr>
-            </tbody>
-          </table>
+          <div class="slider-table-container">
+            <div class="slider-table">
+              <div class="slider-table-item">
+                <span class="slider-table-header">Без подзарядки</span>
+                <span class="slider-table-info-text">48 часов</span>
+               </div>
+            </div>
+          </div>
         </div>
         <div class="slide">
           <div class="slider-image-container">
-            <img class="slider-image" src="#" alt="Квадрокоптер">
+            <img class="slider-image" src="img/slider-3.png" alt="Квадрокоптер">
           </div>
           <span class="slider-number">03</span>
           <b class="slider-header">Порхает как бабочка, жалит как пчела!</b>
@@ -117,19 +121,19 @@
             Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированный под стандартную камеру.
           </p>
           <a class="moreinfo-button" href="#">Подробнее</a>
-          <table class="slider-table">
-            <tbody>
-              <tr>
-                <th>Дальность полета</th>
-                <td>800 м</td>
-              </tr>
-              <tr>
-                <th>Радиус поражения</th>
-                <td>50 м</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>-->
+          <div class="slider-table-container">
+            <div class="slider-table">
+              <div class="slider-table-item">
+                <span class="slider-table-header">Дальность полета</span>
+                <span class="slider-table-info-text">800 м</span>
+              </div>
+              <div class="slider-table-item">
+                <span class="slider-table-header">Радиус поражения</span>
+                <span>50 м</span>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="slider-move-container">
           <ul class="slider-move-buttons">
             <li>
