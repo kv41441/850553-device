@@ -52,7 +52,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "OpenSans", sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 15px;
 }
 
@@ -145,6 +145,12 @@ img {
   margin-right: 5px;
 }
 
+.search-form-input-container {
+  min-width: 440px;
+
+  margin-right: -257px;
+}
+
 .search-form {
   display: flex;
   flex-basis: 150px;
@@ -214,7 +220,7 @@ img {
 }
 
 .search-input:focus ~ .search-button {
-  display: block;
+  display: inline-block;
 }
 
 .search-input:hover {
@@ -232,6 +238,12 @@ img {
   height: 18px;
 
   background: url("../img/search.svg") no-repeat 0 0;
+}
+
+.search-button:active {
+  display: inline-block;
+
+  margin-left: 187px;
 }
 
 .compare-button {
@@ -277,7 +289,7 @@ img {
 .services-navigation-header {
   display: flex;
 
-  font-family: "GilroyExtraBold", sans-serif;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 3.7px;
@@ -299,7 +311,7 @@ img {
 }
 
 .goods-menu .goods-menu-items-container {
-  font-family: "OpenSansLight", sans-serif;
+  font-family: "OpenSansLight", "Arial", sans-serif;
   font-size: 15px;
   line-height: 36px;
   letter-spacing: 0.4px;
@@ -460,14 +472,14 @@ img {
 }
 
 .slide .slider-header {
-  font-family: "GilroyExtraBold", sans-serif;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
   font-size: 47px;
   line-height: 56px;
   letter-spacing: 0.5px;
 }
 
 .slide .slider-number {
-  font-family: "GilroyExtraBold", sans-serif;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
   font-size: 179px;
   line-height: 179px;
   color: white;
@@ -478,7 +490,7 @@ img {
 }
 
 .slide .slider-text {
-  font-family: "OpenSansLight", sans-serif;
+  font-family: "OpenSansLight", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
   color: #464646;
@@ -509,7 +521,7 @@ img {
 }
 
 .moreinfo-button {
-  font-family: "GilroyExtraBold", sans-serif;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   text-decoration: none;
@@ -563,14 +575,14 @@ img {
 }
 
 .slider-table-container th {
-  font-family: "OpenSansLight", sans-serif;
+  font-family: "OpenSansLight", "Arial", sans-serif;
   font-size: 13px;
   line-height: 20px;
   color: #464646;
 }
 
 .slider-table-container td {
-  font-family: "GilroyLight", sans-serif;
+  font-family: "GilroyLight", "Arial", sans-serif;
   font-size: 36px;
   line-height: 48px;
 }
@@ -636,7 +648,7 @@ img {
 /*popular*/
 
 .popular-item-container a {
-  font-family: "GilroyExtraBold", sans-serif;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   text-decoration: none;
@@ -772,7 +784,7 @@ img {
 /*Services slider*/
 
 .services-slider-buttons button {
-  font-family: "GilroyExtraBold", sans-serif;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
@@ -916,7 +928,7 @@ img {
 }
 
 .services-slider-text h2 {
-  font-family: "GilroyExtraBold", sans-serif;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
   font-size: 47px;
   line-height: 48px;
   letter-spacing: 1px;
@@ -925,7 +937,7 @@ img {
 }
 
 .services-slider-text p {
-  font-family: "OpenSansLight", sans-serif;
+  font-family: "OpenSansLight", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
   color: #464646;
@@ -1044,7 +1056,7 @@ img {
 }
 
 .about-us-container h2 {
-  font-family: "GilroyExtraBold", sans-serif;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
   font-size: 47px;
   line-height: 48px;
   letter-spacing: 0.6px;
@@ -1052,7 +1064,7 @@ img {
 }
 
 .about-us-container p {
-  font-family: "OpenSansLight", sans-serif;
+  font-family: "OpenSansLight", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
   color: #464646;
@@ -1075,7 +1087,7 @@ img {
 }
 
 .about-us-list span {
-  font-family: "GilroyExtraBold", sans-serif;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
   font-size: 16px;
   line-height: 40px;
   color: #000000;
@@ -1213,7 +1225,7 @@ img {
 .footer-button a,
 .footer-button {
   text-decoration: none;
-  font-family: "OpenSansLight", sans-serif;
+  font-family: "OpenSansLight", "Arial", sans-serif;
   font-size: 15px;
   line-height: 36px;
   color: #ffffff;
@@ -1310,7 +1322,7 @@ img {
 }
 
 .services-navigation-footer a {
-  font-family: "GilroyExtraBold", sans-serif;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   text-decoration: none;
@@ -1335,7 +1347,7 @@ img {
 }
 
 .footer-contacts-and-services-container p {
-  font-family: "OpenSansLight", sans-serif;
+  font-family: "OpenSansLight", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
   color: #ffffff;
@@ -1491,7 +1503,7 @@ img {
 
 .write-us-form input,
 .write-us-form textarea {
-  font-family: "OpenSans", sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
 }
@@ -1550,7 +1562,7 @@ img {
 }
 
 .write-us-form label {
-  font-family: "GilroyExtraBold", sans-serif;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
@@ -1598,7 +1610,7 @@ img {
 /*Main. Site navigation*/
 
 .site-navigation h1 {
-  font-family: "GilroyExtraBold", sans-serif;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
   font-size: 47px;
   line-height: 56px;
   letter-spacing: 0.5px;
@@ -1617,7 +1629,7 @@ img {
 }
 
 .site-navigation a {
-  font-family: "OpenSansLight", sans-serif;
+  font-family: "OpenSansLight", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   text-decoration: none;
@@ -1720,7 +1732,7 @@ img {
 
 .filter h2,
 .sort h2 {
-  font-family: "GilroyExtraBold", sans-serif;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 3.8px;
@@ -1730,23 +1742,132 @@ img {
 }
 
 .filter h3 {
-  font-family: "GilroyExtraBold", sans-serif;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
 }
 
 .filter-cost-form label {
-  font-family: "OpenSansLight", sans-serif;
+  font-family: "OpenSansLight", "Arial", sans-serif;
   font-size: 14px;
   line-height: 40px;
   letter-spacing: 0.3px;
+}
+
+.filter-cost-form button {
+  min-width: 25px;
+  min-height: 25px;
+
+  background: url("../img/filter-button.svg") no-repeat 0 0;
+
+  border: none;
+}
+
+.filter-cost-form button:hover {
+  transform: scale(1.07);
+
+  cursor: pointer;
+}
+
+.filter-cost-form input[type="number"] {
+  border: none;
+
+  background-color: transparent;
+
+  -moz-appearance: textfield;
+
+  opacity: 0.3;
+}
+
+.filter-cost-form input[type="number"]::-webkit-outer-spin-button,
+.filter-cost-form input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.cost-form-buttons-container {
+  display: flex;
+
+  padding-top: 8px;
+
+  height: 50px;
+  margin-right: -52px;
+
+  position: relative;
+}
+
+.cost-form-buttons-container span {
+  opacity: 0.15;
+}
+
+.cost-form-buttons-container > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.cost-form-buttons-container > div:last-of-type {
+  align-items: center;
+}
+
+.cost-button div {
+  display: flex;
+}
+
+.cost-form-right-button-container div {
+  text-indent: 20px;
+}
+
+.cost-button span {
+  margin-right: 3px;
+  margin-top: 1px;
+}
+
+.cost-form-left-button-container {
+  position: relative;
+
+  z-index: 1;
+}
+
+.cost-form-right-button-container {
+  z-index: 1;
+
+  margin-left: -10px;
+}
+
+.cost-form-left-button-container::after {
+  content: "";
+
+  width: 110px;
+  height: 2px;
+
+  top: 9px;
+  left: 0px;
+
+  position: absolute;
+  
+  background-color: #91c92f;
+
+  z-index: -1;
+}
+
+.cost-form-buttons-container::after {
+  content: "";
+
+  width: 200px;
+  height: 2px;
+
+  top: 17px;
+  left: 0px;
+
+  position: absolute;
+
+  background-color: #dbdbdb;
 }
 
 .filter-cost-form {
   margin-top: 73px;
 }
 
-.filter-cost-form div:first-child::before {
+.filter-cost-form > div:first-of-type::before {
   content: "";
 
   width: 200px;
@@ -1756,12 +1877,12 @@ img {
   left: 200px;
 
   position: absolute;
-  
+
   background-color: #000000;
 }
 
 .filter-cost-form div:first-of-type {
-  margin-bottom: 75px;
+  margin-bottom: 41px;
 }
 
 .filter-cost-form input[type="number"] {
@@ -1967,7 +2088,7 @@ img {
 }
 
 .sort-buttons-container > a {
-  font-family: "OpenSans", sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-decoration: none;
@@ -2026,7 +2147,7 @@ img {
 }
 
 .product-description th {
-  font-family: "GilroyExtraBold", sans-serif;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   margin-left: -3px;
@@ -2036,7 +2157,7 @@ img {
 }
 
 .product-description td {
-  font-family: "GilroyLight", sans-serif;
+  font-family: "GilroyLight", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   opacity: 0.7;
@@ -2089,7 +2210,7 @@ img {
 
   background: none;
 
-  font-family: "OpenSansLight", sans-serif;
+  font-family: "OpenSansLight", "Arial", sans-serif;
   font-size: 13px;
   line-height: 36px;
 
@@ -2147,7 +2268,7 @@ img {
 
   padding: 15px 13px 15px 13px;
 
-  font-family: "GilroyExtraBold", sans-serif;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.5px;
@@ -2195,7 +2316,7 @@ img {
 }
 
 .pagination-list button {
-  font-family: "GilroyExtraBold", sans-serif;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
   font-weight: bold;
   opacity: 0.3;
 }
@@ -2209,7 +2330,7 @@ img {
 }
 
 .pagination-button {
-  font-family: "GilroyExtraBold", sans-serif;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   text-decoration: none;
@@ -2275,7 +2396,7 @@ img {
 }
 
 .pagination-list .pagination-current-page {
-  font-family: "GilroyExtraBold", sans-serif;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
   font-weight: bold;
   opacity: 1;
 }
