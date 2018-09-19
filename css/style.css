@@ -1060,11 +1060,17 @@ img {
 .services-slider-text {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+
+  margin-top: -2px;
+}
+
+.current-slide-text {
+  display: flex;
 }
 
 .services-slider-text h2 {
@@ -1087,7 +1093,7 @@ img {
   margin-right: 320px;
   margin-top: -6px;
 
-  width: 450px;
+  width: 440px;
 }
 
 /*Logotypes*/
