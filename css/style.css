@@ -1080,7 +1080,7 @@ img {
   margin-top: -2px;
 }
 
-.current-slide-text {
+.current-services-slide-text {
   display: flex;
 }
 
@@ -2035,6 +2035,8 @@ img {
   margin-right: -52px;
 
   position: relative;
+
+  z-index: 1;
 }
 
 .cost-form-buttons-container span {
