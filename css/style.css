@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'OpenSans';
-  src: url("../fonts/opensans.woff2") format("woff2"),
+  src: url("../fonts/opensans.woff2") format("woff2");
   src: url("../fonts/opensans.woff") format("woff");
   font-weight: bold;
   font-style: normal;
@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: 'OpenSansLight';
-  src: url("../fonts/opensanslight.woff2") format("woff2"),
+  src: url("../fonts/opensanslight.woff2") format("woff2");
   src: url("../fonts/opensanslight.woff") format("woff");
   font-weight: bold;
   font-style: normal;
@@ -1916,6 +1916,20 @@ img {
   min-width: 200px;
 
   background-color: #eeeeee;
+
+  position: relative;
+}
+
+.filter::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100%;
+  background-image: linear-gradient(#dbdbdb 70px,#efefef 70px);
+
+  z-index: -1;
 }
 
 .filter::before {
@@ -1924,7 +1938,7 @@ img {
   width: 468px;
   height: 70px;
 
-  top: -10px;
+  top: 0px;
   left: 0px;
 
   position: absolute;
@@ -1956,6 +1970,8 @@ img {
   position: absolute;
   
   background-color: #000000;
+
+  z-index: 1;
 }
 
 .catalog-main-content-inner-container {
@@ -2017,6 +2033,9 @@ img {
   -moz-appearance: textfield;
 
   opacity: 0.3;
+
+  width: 60px;
+  height: 15px;
 }
 
 .filter-cost-form input[type="number"]::-webkit-outer-spin-button,
@@ -2126,7 +2145,7 @@ img {
   width: 200px;
   height: 2px;
 
-  top: 269px;
+  top: 279px;
   left: 200px;
 
   position: absolute;
@@ -2136,10 +2155,6 @@ img {
 
 .filter-cost-form div:first-of-type {
   margin-bottom: 41px;
-}
-
-.filter-cost-form input[type="number"] {
-  width: 60px;
 }
 
 .filter .filter-color-check-container {
@@ -2224,7 +2239,7 @@ img {
   width: 200px;
   height: 2px;
 
-  top: 554px;
+  top: 564px;
   left: 200px;
 
   position: absolute;
@@ -2338,6 +2353,20 @@ img {
 
   text-decoration: none;
   background-color: #eeeeee;
+
+  position: relative;
+}
+
+.sort::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100%;
+  background-color: #efefef;
+
+  z-index: -1;
 }
 
 .sort h2 {
@@ -2365,7 +2394,7 @@ img {
   color: #000000;
   opacity: 0.3;
 
-  margin-right: 30px;
+  margin-right: 26px;
 
   -ms-flex-item-align: center;
 
