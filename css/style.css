@@ -1,32 +1,32 @@
 ﻿@font-face {
-  font-family: 'GilroyExtraBold';
+  font-family: "GilroyExtraBold";
   src: url("../fonts/gilroyextrabold.woff2") format("woff2");
   src: url("../fonts/gilroyextrabold.woff") format("woff");
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'GilroyLight';
+  font-family: "GilroyLight";
   src: url("../fonts/gilroylight.woff2") format("woff2");
   src: url("../fonts/gilroylight.woff") format("woff");
-  font-weight: bold;
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'OpenSans';
+  font-family: "OpenSans";
   src: url("../fonts/opensans.woff2") format("woff2");
   src: url("../fonts/opensans.woff") format("woff");
-  font-weight: bold;
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'OpenSansLight';
+  font-family: "OpenSansLight";
   src: url("../fonts/opensanslight.woff2") format("woff2");
   src: url("../fonts/opensanslight.woff") format("woff");
-  font-weight: bold;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -1220,6 +1220,7 @@ img {
   display: -ms-flexbox;
   display: flex;
 
+  margin-top: 105px;
   margin-bottom: 91px;
 }
 
@@ -1382,6 +1383,8 @@ img {
 /*Footer*/
 
 .footer-container {
+  width: 100%;
+
   background-color: #464646;
 }
 
@@ -1396,6 +1399,8 @@ img {
   display: block;
 
   position: relative;
+
+  background-color: #464646;
 }
 
 .footer ul {
@@ -1543,7 +1548,7 @@ img {
   font-size: 15px;
   line-height: 30px;
   color: #ffffff;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.2px;
 
   margin-top: 19px;
 }
@@ -1922,11 +1927,15 @@ img {
 
 .filter::after {
   content: "";
+
   position: absolute;
+
   top: 0;
   right: 0;
+
   width: 100vw;
   height: 100%;
+
   background-image: linear-gradient(#dbdbdb 70px,#efefef 70px);
 
   z-index: -1;
@@ -2357,16 +2366,24 @@ img {
   position: relative;
 }
 
-.sort::after {
+.catalog-body-container {
+  position: relative;
+}
+
+.catalog-body-container::after {
   content: "";
+
   position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100vw;
-  height: 100%;
+
+  top: 145px;
+  right: 0px;
+
+  width: 100%;
+  height: 70px;
+
   background-color: #efefef;
 
-  z-index: -1;
+  z-index: -2;
 }
 
 .sort h2 {
