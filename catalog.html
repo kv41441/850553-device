@@ -24,17 +24,17 @@
           </form>
           <ul class="user-navigation">
             <li class="header-login-link catalog-header">
-              <a href="#">
-                <span>Валентин Петухов</span>
+              <a class="header-profile-link" href="#">
+                Валентин Петухов
               </a>
             </li>
-            <li><a class="header-login-button" href="#"><span>Выйти</span></a></li>
+            <li><a class="header-login-button" href="#">Выйти</a></li>
           </ul>
           <a class="compare-button header-button" href="#">
-            <span>Сравнить</span>
+            Сравнить
           </a>
           <a class="basket-button header-button" href="#">
-            <span>Корзина</span>
+            Корзина
           </a>
         </div>
         <ul class="services-navigation-header">
@@ -87,7 +87,7 @@
                     </button>
                     <div>
                       <label for="cost-form-left-number">от</label>
-                      <input type="number" name="cost-form-left-number" min="0" max="10000" value="0">
+                      <input type="number" name="cost-form-left-number" id="cost-form-left-number" min="0" max="10000" value="0">
                     </div>
                   </div>
                   <div class="cost-form-right-button-container cost-button">
@@ -96,7 +96,7 @@
                     </button>
                     <div>
                       <label for="cost-form-right-number">до</label>
-                      <input type="number" name="cost-form-right-number" min="0" max="10000" value="5000">
+                      <input type="number" name="cost-form-right-number" id="cost-form-right-number" min="0" max="10000" value="5000">
                     </div>
                   </div>
                 </div>
@@ -104,23 +104,23 @@
               <div>
                 <h3>Цвет</h3>
                 <ul class="filter-color-check-container">
-                  <li>
+                  <li class="filter-color-check-item">
                     <input class="filter-check-color" type="checkbox" name="filter-check-black" id="filter-check-black">
                     <label for="filter-check-black">Черный</label>
                   </li> 
-                  <li>
+                  <li class="filter-color-check-item">
                     <input class="filter-check-color" type="checkbox" name="filter-check-white" id="filter-check-white">
                     <label for="filter-check-white">Белый</label>
                   </li>
-                  <li>
+                  <li class="filter-color-check-item">
                     <input class="filter-check-color" type="checkbox" name="filter-check-blue" id="filter-check-blue">
                     <label for="filter-check-blue">Синий</label> 
                   </li>
-                  <li>
+                  <li class="filter-color-check-item">
                     <input class="filter-check-color" type="checkbox" name="filter-check-red" id="filter-check-red">
                     <label for="filter-check-red">Красный</label>
                   </li>
-                  <li>
+                  <li class="filter-color-check-item">
                     <input class="filter-check-color" type="checkbox" name="filter-check-pink" id="filter-check-pink">
                     <label for="filter-check-pink">Розовый</label>
                   </li>
@@ -129,15 +129,15 @@
               <div>
                 <h3>Bluetooth</h3>
                 <ul class="filter-bluetooth">
-                <li>
-                  <input class="filter-check-bluetooth" type="radio" name="check-bluetooth" id="check-bluetooth-yes" value="yes" checked>
-                  <label for="check-bluetooth-yes">Есть</label>
-                </li>
-                <li>
-                  <input class="filter-check-bluetooth" type="radio" name="check-bluetooth" id="check-bluetooth-no" value="no">
-                  <label for="check-bluetooth-no">Нет</label>
-                </li>
-               </ul>
+                  <li class="filter-bluetooth-item">
+                    <input class="filter-check-bluetooth" type="radio" name="check-bluetooth" id="check-bluetooth-yes" value="yes" checked>
+                    <label for="check-bluetooth-yes">Есть</label>
+                  </li>
+                  <li class="filter-bluetooth-item">
+                    <input class="filter-check-bluetooth" type="radio" name="check-bluetooth" id="check-bluetooth-no" value="no">
+                    <label for="check-bluetooth-no">Нет</label>
+                  </li>
+                </ul>
               </div>
               <button class="moreinfo-button filter-apply-button" type="submit" name="filter-submit" id="filter-submit">Показать</button>
             </form>
@@ -168,6 +168,7 @@
             <section class="catalog-content">
               <h2 class="visually-hidden">Список товаров</h2>
               <article class="product-card">
+                <h2 class="visually-hidden">Любительская селфи-палка</h2>
                 <div class="product-card-image-container">
                   <div class="product-image-container">
                     <img class="product-image" src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
@@ -191,9 +192,10 @@
                 </div>
               </article>
               <article class="product-card">
+                <h2 class="visually-hidden">Профессиональная селфи-палка</h2>
                 <div class="product-card-image-container">
                   <div class="product-image-container">
-                    <img class="product-image" src="img/item-2.jpg" alt="Любительская селфи-палка" width="360" height="380">
+                    <img class="product-image" src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
                   </div>
                   <div class="product-card-buttons-container">
                     <a class="to-basket-button moreinfo-button" href="#">
@@ -214,9 +216,10 @@
                 </div>
               </article>
               <article class="product-card">
+                <h2 class="visually-hidden">Непотопляемая селфи-палка</h2>
                 <div class="product-card-image-container">
                   <div class="product-image-container">
-                    <img class="product-image" src="img/item-3.jpg" alt="Любительская селфи-палка" width="360" height="380">
+                    <img class="product-image" src="img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
                   </div>
                   <div class="product-card-buttons-container">
                     <a class="to-basket-button moreinfo-button" href="#">
@@ -237,9 +240,10 @@
                 </div>
               </article>
               <article class="product-card">
+                <h2 class="visually-hidden">Селфи-палка "Следуй за мной"</h2>
                 <div class="product-card-image-container">
                   <div class="product-image-container">
-                    <img class="product-image" src="img/item-4.jpg" alt="Любительская селфи-палка" width="360" height="380">
+                    <img class="product-image" src="img/item-4.jpg" alt="Селфи-палка Следуй за мной" width="360" height="380">
                     <span class="product-card-label-new">NEW</span>
                   </div>
                   <div class="product-card-buttons-container">
@@ -297,20 +301,20 @@
         </a>
         <div class="footer-navigation-container">
           <ul class="footer-user-navigation">
-            <li class="footer-login-link footer-button">
-              <a href="#">
-                <span>Валентин Петухов</span>
+            <li class="footer-login-link index-footer-button">
+              <a class="footer-profile-link footer-button" href="#">
+                Валентин Петухов
               </a>
             </li>
             <li>
-              <a class="footer-login-button footer-button" href="#"><span>Выйти</span></a>
+              <a class="footer-login-button footer-button" href="#">Выйти</a>
             <li>
           </ul>
           <a class="footer-compare-button footer-button" href="#">
-            <span>Сравнить</span>
+            Сравнить
           </a>
           <a href="#" class="footer-basket-button footer-button">
-            <span>Корзина</span>
+            Корзина
           </a>
         </div>
         <div class="footer-contacts-and-services-container">

@@ -104,12 +104,12 @@ img {
 }
 
 .header-logo[href]:hover,
-.header-button[href]:hover span {
+.header-button:hover {
   opacity: 0.5;
 }
 
 .header-logo[href]:active,
-.header-button[href]:active {
+.header-button:active {
   opacity: 0.2;
 }
 
@@ -152,16 +152,26 @@ img {
           flex-grow: 1;
 }
 
-.header-login-link svg {
-  margin-right: 5px;
-}
-
-.header-login-link span {
+.header-login-link {
   margin-right: 15px;
 }
 
-.header-login-button:hover span {
+.index-header-button {
+  margin-right: 0;
+
+  -ms-flex-preferred-size: 100px;
+      flex-basis: 100px;
+  letter-spacing: 0.3px;
+}
+
+.header-profile-link:hover,
+.header-login-button:hover {
   opacity: 0.5;
+}
+
+.header-profile-link:active,
+.header-login-button:active {
+  opacity: 0.3;
 }
 
 .header-login-link {
@@ -170,12 +180,20 @@ img {
   margin-left: 50px;
 }
 
-.header-login-link:before {
+.index-footer-button {
+
+}
+
+.header-profile-link {
+  position: relative;
+}
+
+.header-profile-link::before {
   content: "";
 
   position: absolute;
   left: -25px;
-  top: 11px;
+  top: 5px;
 
   width: 16px;
   height: 18px;
@@ -612,12 +630,12 @@ img {
   width: 490px;
 }
 
-.second-slide-text {
+.slider-text-wide {
   letter-spacing: 0.2px;
   width: 450px;
 }
 
-.third-slide-text {
+.slider-text-widest {
   letter-spacing: 0.2px;
   width: 470px;
 }
@@ -1570,8 +1588,11 @@ img {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  flex-wrap: wrap;
 
   margin-right: -20px;
+
+  padding-left: 100px;
 }
 
 .footer-user-navigation {
@@ -1588,18 +1609,26 @@ img {
 }
 
 .footer-login-link {
-  margin-right: 7px;
+  margin-right: 5px;
 
   position: relative;
 }
 
-.footer-login-link:before {
+.index-footer-button {
+  margin-right: 12px;
+}
+
+.footer-profile-link {
+  position: relative;
+}
+
+.footer-profile-link:before {
   content: "";
 
   position: absolute;
 
   left: -25px;
-  top: 12px;
+  top: 4px;
 
   width: 16px;
   height: 18px;
@@ -1609,12 +1638,8 @@ img {
   z-index: 1;
 }
 
-.footer-login-link span {
-  margin-right: 5px;
-}
-
 .footer-compare-button {
-  width: 131px;
+  width: 130px;
 
   position: relative;
 }
@@ -1770,7 +1795,7 @@ img {
   opacity: 1;
 }
 
-.footer-social li:active {
+.footer-social img:active {
   opacity: 0.1;
 }
 
@@ -1996,18 +2021,7 @@ img {
 
 .catalog-header {
   margin-left: 152px;
-}
-
-.catalog-header span {
   letter-spacing: 0.5px;
-}
-
-.catalog-header:hover span:last-of-type {
-  opacity: 0.5;
-}
-
-.catalog-header:active span:last-of-type {
-  opacity: 0.2;
 }
 
 /*Main. Site navigation*/
@@ -2377,13 +2391,17 @@ img {
 }
 
 .filter-check-color {
-  display: none;
+  opacity: 0;
+
+  margin-left: -16px;
 }
 
 .filter-color-check-container label {
   position: relative;
 
   padding-left: 18px;
+
+  letter-spacing: 0px;
 }
 
 .filter-color-check-container label::before {
@@ -2391,8 +2409,8 @@ img {
 
   position: absolute;
 
-  width: 30px;
-  height: 30px;
+  width: 23px;
+  height: 23px;
 
   top: -4px;
   left: -22px;
@@ -2405,8 +2423,8 @@ img {
 
   position: absolute;
 
-  width: 30px;
-  height: 30px;
+  width: 23px;
+  height: 23px;
 
   top: -4px;
   left: -22px;
@@ -2414,15 +2432,28 @@ img {
   background: url("../img/checkbox-on.svg") no-repeat 0 0;
 }
 
-.filter-color-check-container li:hover {
+.filter-check-color:focus + label::before,
+.filter-check-color:focus + label::after {
+  outline: 3px solid rgb(59, 153, 252);
+}
+
+.filter-color-check-item:hover {
   opacity: 0.5;
 }
 
-.filter-color-check-container li:active {
+.filter-color-check-item:active {
   opacity: 1;
 }
 
 .filter-check-color:disabled + label {
+  opacity: 0.15;
+}
+
+.filter-color-check-item:hover .filter-check-color:disabled + label {
+  opacity: 0.3;
+}
+
+.filter-color-check-item:active .filter-check-color:disabled + label {
   opacity: 0.15;
 }
 
@@ -2467,11 +2498,14 @@ img {
 }
 
 .filter-bluetooth input[type="radio"] {
-  display: none;
+  opacity: 0;
+
+  margin-left: -16px;
 }
 
 .filter-bluetooth label {
   position: relative;
+
   padding-left: 18px;
 }
 
@@ -2480,8 +2514,8 @@ img {
 
   position: absolute;
 
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
 
   top: -5px;
   left: -22px;
@@ -2494,13 +2528,18 @@ img {
 
   position: absolute;
 
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
 
   top: -5px;
   left: -22px;
 
   background: url("../img/radio-on.svg") no-repeat 0 0;
+}
+
+.filter-check-bluetooth:focus + label::before,
+.filter-check-bluetooth:focus + label::after {
+  outline: 3px solid rgb(59, 153, 252);
 }
 
 .filter-check-bluetooth:checked + label::after {
@@ -2509,15 +2548,23 @@ img {
   z-index: 1;
 }
 
-.filter-bluetooth li:hover {
+.filter-bluetooth-item:hover {
   opacity: 0.5;
 }
 
-.filter-bluetooth li:active {
+.filter-bluetooth-item:active {
   opacity: 1;
 }
 
 .filter-check-bluetooth:disabled + label {
+  opacity: 0.15;
+}
+
+.filter-bluetooth-item:hover .filter-check-bluetooth:disabled + label {
+  opacity: 0.3;
+}
+
+.filter-bluetooth-item:active .filter-check-bluetooth:disabled + label {
   opacity: 0.15;
 }
 
